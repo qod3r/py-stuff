@@ -9,4 +9,4 @@ def ari(op):
         case '/':
             return lambda x, y: x / y
 
-print(ari(input())(2,5))
+print(ari(input())(2, 5))

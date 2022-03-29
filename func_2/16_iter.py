@@ -9,8 +9,8 @@ try:
         l = sys.stdin.readline().split()
         
         for i, v in enumerate(l):
+            v = v.strip('.,')
             if v not in words and v[0].isupper():
-                v = v.strip('.,')
                 words.update({v: counter + i})
         counter += i + 1
         
