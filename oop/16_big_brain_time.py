@@ -37,6 +37,7 @@ class Operation:
         self.f2 = f2
     
     def __call__(self, x):
+        # unary operators
         if self.operator == "identity":
             return x
         elif self.operator == "sqrt":

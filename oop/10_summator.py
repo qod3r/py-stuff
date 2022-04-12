@@ -23,8 +23,7 @@ a = Summator()
 b = SquareSum()
 c = CubeSum()
 
-
-
 print(a.sum(3))
 print(b.sum(3))
 print(c.sum(3))
+
