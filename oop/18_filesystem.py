@@ -39,6 +39,11 @@ class System:
         for idx, file in enumerate(map(str, self.curr_dir.get_content())):
                 if target == file:
                     return self.curr_dir.get_content()[idx]
+        # if nothing found
+        return self.curr_dir
+    
+    def __resolve_path(self):
+        pass
     
     # print current path
     def pwd(self):
@@ -69,7 +74,7 @@ class System:
             pass
         elif dir == "..":
             if self.curr_dir.get_parent() is not None:
-                print(self.curr_dir.get_parent())
+                # print(self.curr_dir.get_parent())
                 self.curr_dir == self.curr_dir.get_parent()
         else:
             self.curr_dir = self.__lookup(dir)
